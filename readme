@@ -1,0 +1,3 @@
+AWS-Mission-11
+使用image: jupyter/base-notebook
+use docker-compose ps -d to build container

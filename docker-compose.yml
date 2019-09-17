@@ -1,0 +1,9 @@
+#docker compose   #註解
+version: '3'      #目前docker-compose.yml使用的版本
+services:         #services 關鍵字後面列出專案中的服務
+  jupyter:                                               #jupyter服務
+    image: jupyter/base-notebook                         #來源
+    container_name: jupyter-notebook                     #容器名稱
+    ports:                                               #網路端口對應
+      - "8888:8888"
+    command: start-notebook.sh --NotebookApp.token=''    #替換指令???
